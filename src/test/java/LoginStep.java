@@ -3,12 +3,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import org.example.Main;
+
 
 
 public class LoginStep{
     @Given("user is on login page")
     public void UserIsOnLoginPage(){
-        TrendyolTestPage LogIn=new TrendyolTestPage();
+    Main.TrendyolTestPage LogIn=new Main.TrendyolTestPage();
         LogIn.GirisYapBas();
         System.out.println("1");
 
